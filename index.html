@@ -4,48 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StatusLover - Home</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>StatusLover</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="help.html">Help</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li class="dropdown">
-                    <a href="#">Category</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">All Videos</a></li>
-                        <li><a href="#">Aesthetic Status</a></li>
-                        <li><a href="#">Black Screen Status</a></li>
-                        <li><a href="#">Option 4</a></li>
-                        <li><a href="#">Option 5</a></li>
+    <header class="bg-dark text-light py-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1>StatusLover</h1>
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="help.html">Help</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">All Videos</a></li>
+                                <li><a class="dropdown-item" href="#">Aesthetic Status</a></li>
+                                <li><a class="dropdown-item" href="#">Black Screen Status</a></li>
+                                <li><a class="dropdown-item" href="#">Option 4</a></li>
+                                <li><a class="dropdown-item" href="#">Option 5</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-            </ul>
-        </nav>
+                </nav>
+            </div>
+        </div>
     </header>
 
-    <section id="home">
-        <h2>Welcome to StatusLover</h2>
-        <p>Your go-to place for the best status videos and short clips!</p>
-        <p>Top Videos: Watch our most popular videos below:</p>
-        <div class="video-gallery">
-            <div class="video">
-                <iframe width="300" height="200" src="https://www.youtube.com/embed/yourvideoid1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                <p>Video Title 1</p>
+    <main class="container my-5">
+        <section id="home">
+            <h2 class="mb-4">Welcome to StatusLover</h2>
+            <p>Your go-to place for the best status videos and short clips!</p>
+            <p>Top Videos:</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <iframe class="card-img-top" width="100%" height="200" src="https://www.youtube.com/embed/yourvideoid1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <p class="card-text">Video Title 1</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more video cards as needed -->
             </div>
-            <!-- Add more videos as needed -->
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <footer>
-        <p>&copy; 2024 StatusLover. All rights reserved.</p>
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 StatusLover. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
 </body>
 </html>
