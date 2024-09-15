@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Status Lover - Official</title>
+    <title>StatusLover - Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,10 +13,20 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#videos">Videos</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#">Category</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">All Videos</a></li>
+                        <li><a href="#">Aesthetic Status</a></li>
+                        <li><a href="#">Black Screen Status</a></li>
+                        <li><a href="#">Option 4</a></li>
+                        <li><a href="#">Option 5</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
@@ -25,46 +34,18 @@
     <section id="home">
         <h2>Welcome to StatusLover</h2>
         <p>Your go-to place for the best status videos and short clips!</p>
-        <a href="#videos" class="btn">Explore Videos</a>
-    </section>
-
-    <section id="about">
-        <h2>About the Channel</h2>
-        <p>StatusLover is your hub for the most trending and aesthetic lyrics status videos. Stay updated with the latest trends!</p>
-    </section>
-
-    <section id="videos">
-        <h2>Featured Videos</h2>
+        <p>Top Videos: Watch our most popular videos below:</p>
         <div class="video-gallery">
             <div class="video">
                 <iframe width="300" height="200" src="https://www.youtube.com/embed/yourvideoid1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 <p>Video Title 1</p>
             </div>
-            <div class="video">
-                <iframe width="300" height="200" src="https://www.youtube.com/embed/yourvideoid2" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                <p>Video Title 2</p>
-            </div>
-            <div class="video">
-                <iframe width="300" height="200" src="https://www.youtube.com/embed/yourvideoid3" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                <p>Video Title 3</p>
-            </div>
+            <!-- Add more videos as needed -->
         </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
     </section>
 
     <footer>
         <p>&copy; 2024 StatusLover. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
