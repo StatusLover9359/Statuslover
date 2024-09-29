@@ -1,0 +1,40 @@
+.About-para-and-head{
+	text-align: center;
+}
+
+.About-container{
+	color: white;
+	background: gray;
+}
+
+.top-videos-head{
+	text-align: center;
+}
+
+.top-videos-head:hover{
+	color: cadetblue;
+}
+
+.Credits{
+	text-decoration: none;
+}
+
+.custom-logo{
+	border-radius: 50%;
+}
+
+.custom-logo:hover{
+	transform: rotate(-20deg);
+	transition: transform 0.5s;
+	
+}
+
+.Upload-Date-Text{
+	text-align: center;
+	opacity: 50%;
+}
+
+
+
+
+
